@@ -15,7 +15,7 @@
   "env": {
     "DEVISE_SECRET_KEY": {
       "description": "Use on device gem",
-      "value": "sentry.conf"
+      "generator": "secret"
     },
     "SECRET_KEY_BASE": {
       "description": "Use on Ruby on Rails apps",
@@ -24,14 +24,6 @@
     "SECRET_TOKEN": {
       "description": "Use on Ruby on Rails apps",
       "generator": "secret"
-    },
-    "SENTRY_URL_PREFIX": {
-      "description": "Your applications URL, no trailing slash",
-      "value": "https://YOURAPPNAME.herokuapp.com"
-    },
-    "SERVER_EMAIL": {
-      "description": "Reply to address for outgoing email",
-      "value": "root@localhost"
     }
   }
 }
