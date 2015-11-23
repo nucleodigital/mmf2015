@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'home#index'
+
   # authentication
   devise_for :users, :skip => [:sessions]
   as :user do

@@ -1,0 +1,37 @@
+{
+  "name": "Movistar Music Fest 2015",
+  "description": "Rails app developed by Núcleo Digital",
+  "repository": "https://github.com/nucleodigital/mmf2015",
+  "logo": "http://i.imgur.com/9k9bgnb.png",
+  "keywords": [
+    "rails",
+    "movistar",
+    "music",
+    "fest"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "DEVISE_SECRET_KEY": {
+      "description": "Use on device gem",
+      "value": "sentry.conf"
+    },
+    "SECRET_KEY_BASE": {
+      "description": "Use on Ruby on Rails apps",
+      "generator": "secret"
+    },
+    "SECRET_TOKEN": {
+      "description": "Use on Ruby on Rails apps",
+      "generator": "secret"
+    },
+    "SENTRY_URL_PREFIX": {
+      "description": "Your applications URL, no trailing slash",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    },
+    "SERVER_EMAIL": {
+      "description": "Reply to address for outgoing email",
+      "value": "root@localhost"
+    }
+  }
+}
