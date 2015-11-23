@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  post "/" => "home#index", :as => "root"
 
   # authentication
   devise_for :users, :skip => [:sessions]
